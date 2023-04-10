@@ -1,24 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Giada Palmieri</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
-  </head>
-  <body>
-    <nav>
-  
-		<a href="/" class="current" >About</a>
-  
-		<a href="/assets/pdf/giada-CV.pdf"  class="othertab"   target="_blank" >CV</a>
-  
-		<a href="/talks.html"  class="othertab"  >Talks</a>
-  
-		<a href="/publications.html"  class="othertab"  >Publications</a>
-  
-</nav>
+---
+layout: default
+title: Giada Palmieri
+---
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -36,29 +21,28 @@
 		<br>
     <p> Hi - I’m Giada, a PhD candidate at the <a href = "https://www.uu.nl/en/research/institute-for-language-sciences">Institute for Language Sciences </a>. </p>
 	I received my BA in <em>Foreign Languages and Literature</em> from the University of Bologna in 2016 and my MA in <em>Linguistics</em> from Utrecht University in 2018. 
-    <br>That same year, I joined as a PhD candidate Yoad Winter’s ERC project <a href = "https://rocky.sites.uu.nl/" target="_blank">‘Forests and Trees: the Formal Semantics of Collective Categorization’</a>, where I’ve been focusing on reciprocal predicates.
+    <br>That same year, I joined as a PhD candidate Yoad Winter’s ERC project <a href = "https://rocky.sites.uu.nl/members/" target="_blank">‘Forests and Trees: the Formal Semantics of Collective Categorization’</a>, where I’ve been focusing on reciprocal predicates.
     <br> My research interests include semantics, verbal morpho-syntax, plurality-related phenomena and - more broadly - argument structure, (lexical) semantic universals, linguistic fieldwork and the interaction between formal linguistics and typology, and how they can support one another.
-    <p> My first name is pronounced ['dʒa:da], or ['dʒa:ða] in my native Central Italian variety. My pronouns are <em>she/her</em>. </p>
+    <p> My first name is pronounced ['dʒa:da], or ['ʒa:ða] in my native Central Italian variety. My pronouns are <em>she/her</em>. </p>
     <p> My full CV is <a href = "/assets/pdf/giada-CV.pdf" target="_blank"> here</a>; to get in touch, you can drop me an email <a href = 'mailto:g.palmieri@uu.nl' target="_blank">here</a>.</p>
       <body>
      
   <br>
  <h3>Good news</h3> 
 <ul>
-  
+  {% for post in site.posts %}
     <li>
-      <h2><a href="/2022/08/31/SLE.html"></a></h2>
-       <p>the poster that Sofiya Ros and I presented @<a href="https://societaslinguistica.eu/sle2022/" target="_blank">SLE55</a> was awarded the 1st prize as <em>Best Conference Poster</em> !</p>
-
+      <h2><a href="{{ post.url }}">{{ title }}</a></h2>
+       {{ post.excerpt }}
     </li>
-  
+  {% endfor %}
 </ul> 
     </div>
     
 <div style="float: right; width: 40%">
     <figure>
         <img src="/assets/img/giada.jpg"  width="250" height=320" />
-        <figcaption></figcaption>
+        <figcaption>{{ include.caption }}</figcaption>
     </figure> 
     </div>
 
@@ -88,7 +72,4 @@
 
 
 
-</html>
-
-  </body>
 </html>
