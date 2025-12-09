@@ -1,14 +1,1 @@
-{
-	"version": 3,
-	"file": "styles.css",
-	"sources": [
-		"styles.scss",
-		"_sass/main.scss"
-	],
-	"sourcesContent": [
-		"@import \"main\";\n\nbody {\n    font-family: Ubuntu;\n}\n\nh2, h3, h4 {\n    color: darkred;\n}\n",
-		".current {\n  color: darkred;\n}\n\n\n"
-	],
-	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACP,KAAK,EAAE,OAAO,GACf;;ADAD,AAAA,IAAI,CAAC,EACD,WAAW,EAAE,MAAM,GACtB;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC,EACP,KAAK,EAAE,OAAO,GACjB"
-}
+{"version":3,"sourceRoot":"","sources":["../../_sass/main.scss","styles.scss"],"names":[],"mappings":"AAAA;EACE;;;ACCF;EACI;;;AAGJ;EACI","sourcesContent":[".current {\n  color: darkred;\n}\n\n\n","@import \"main\";\n\nbody {\n    font-family: Ubuntu;\n}\n\nh2, h3, h4 {\n    color: darkred;\n}\n"],"file":"styles.css"}
